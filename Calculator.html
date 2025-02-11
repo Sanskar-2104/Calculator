@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Calculator</h1>
+    <div class="container">
+    <div class="calculator">
+    <table>
+        <tr>
+                <td colspan="4"> <input type="text" id="result" disabled class="display-box"> </td>
+        </tr>    
+        <tr>
+            <td> <input type="button" value="C" onclick="clearScreen()" id="btn" class="operator"> </td>
+            <td> <input type="button" value="DE" onclick="del()" id="btn"> </td>
+            <td> <input type="button" value="+/-" onclick="convert()" class="holder"> </td>
+            <td> <input type="button" value="%" onclick="display('%')" class="holder"></td> <!-- % is the modulo operator which will always give remainder -->
+        </tr>
+        <tr>
+            <td> <input type="button" value="+" onclick="display('+')" class="holder"> </td>
+            <td> <input type="button" value="-" onclick="display('-')"class="holder"> </td>
+            <td> <input type="button" value="*" onclick="display('*')" class="holder"> </td>
+            <td> <input type="button" value="/" onclick="display('/')" class="holder"> </td>
+        </tr>
+        <tr>
+            <td> <input type="button" value="7" onclick="display('7')"> </td>
+            <td> <input type="button" value="8" onclick="display('8')"> </td>
+            <td> <input type="button" value="9" onclick="display('9')"> </td>
+            <td rowspan="3"> <input type="button" value="=" onclick="calculate()" class="equal"> </td>
+        </tr>
+        <tr>
+            <td> <input type="button" value="4" onclick="display('4')"> </td>
+            <td> <input type="button" value="5" onclick="display('5')"> </td>
+            <td> <input type="button" value="6" onclick="display('6')"> </td>
+        </tr>
+        <tr>
+            <td> <input type="button" value="1" onclick="display('1')"> </td>
+            <td> <input type="button" value="2" onclick="display('2')"> </td>
+            <td> <input type="button" value="3" onclick="display('3')"> </td>
+        </tr>
+        <tr>
+            <td> <input type="button" value="00" onclick="display('00')"> </td>
+            <td colspan="2"> <input type="button" value="0" onclick="display('0')" class="hold"> </td>
+            <td> <input type="button" value="." onclick="display('.')"> </td>
+        </tr>
+    </table>
+    </div>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
